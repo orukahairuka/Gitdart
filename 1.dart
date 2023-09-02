@@ -1,12 +1,19 @@
 void main() {
-  int mathScore = 100; //数学の点数
-  if (mathScore >= 80) {
-    print('優');
-  } else if (mathScore >= 60) {
-    print('良');
-  } else if (mathScore >= 30) {
-    print('可');
-  } else {
-    print('不可');
+  String neko = '吾輩は猫である。名前はまだない。' +
+      'どこで生まれたかとんと見当がつかぬ' +
+      '何でも薄暗いジメジメしたところで' +
+      'ニャーニャー泣いていたことだけは記憶している。';
+
+  String keyword1 = '猫';
+  String keyword2 = 'ニャー';
+  String keyword3 = 'にゃー';
+
+  if (neko.contains(keyword1) ||
+      neko.contains(keyword2) ||
+      neko.contains(keyword3)) {
+    print('『$keyword1』『$keyword2』『$keyword3』のいずれかを含みます');
+  }else{
+        print('『$keyword1』『$keyword2』『$keyword3』のいずれの含みません');
+
   }
 }
